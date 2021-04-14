@@ -10,7 +10,7 @@ export const FooterContainer = styled.div`
     color: #fff;
 
     @media screen and (max-width: 500px){
-        height: 80vh;
+        height: 100vh;
     }
 
 `
