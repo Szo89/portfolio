@@ -1,33 +1,40 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
+    height: 100%;
     display: flex;
     flex-direction: column;
-    background: #22223B;
-    padding: 10px 20px;
     text-align: center;
+    justify-content: center;
     align-content: center;
-    width: 100%;
-    height: 500px;
+    color: #fff;
+
+    @media screen and (max-width: 500px){
+        height: 80vh;
+    }
+
 `
 
-export const FooterH1 = styled.h1`
-    color: #eef0f5;
-    margin-top: 40px;
-`
 export const IconsWrapper = styled.div`
-    padding-left: 16px;
     display: flex;
+    flex-flow: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    color: #fff;
+    font-size: 2.5rem;
 `
 
 export const Icons = styled.a`
-    margin-bottom: 10px;
+    margin: 30px 35px;
     color: #fff;
-    margin: 40px 35px;
+    font-size: 3rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+        transform: scale(1.5);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        color: #EE7752;
+    }
 `
 export const FooterWrapper = styled.div`
     margin-bottom: 10px;
@@ -35,17 +42,19 @@ export const FooterWrapper = styled.div`
 
 export const FooterH2 = styled.h2`
     font-size: 1.5rem;
-    color: #fff;
     margin-bottom: 10px;
 `
 
 export const FooterH3 = styled.h3`
     font-size: 1.2rem;
-    color: #fff;
+`
+export const FooterContent = styled.div`    
+    width: 100%;
 `
 
 export const FooterP = styled.p`
     font-family: 'Josefin Slab', serif;
     color: #fff;
-    margin-top: 50px;
+    font-size: 16px;
+
 `

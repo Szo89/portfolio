@@ -5,7 +5,6 @@ export const Card = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 `
 
 export const CardContainer = styled.div`
@@ -13,18 +12,19 @@ export const CardContainer = styled.div`
 `
 
 export const CardWrapper = styled.div`
-    width: 280px;
-    height: 380px;
-    border: solid 3px #FCA311;
+    max-height: 100px;
+    min-height: 280px;
+    border: solid 5px #23A6D5;
     display: flex ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #fff;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
-    margin: 30px;
+    margin: 20px;
 
     &:hover{
         transform: scale(1.02);
@@ -32,14 +32,17 @@ export const CardWrapper = styled.div`
         cursor: pointer;
     }
 
-    @media screen and (max-width: 760px){
-        margin: 20px
+    @media screen and (min-width: 760px){
+        margin: 30px 20px;
     }
 
-    @media screen and (max-width: 480px){
-        max-height: 120px;
-        min-height: 280px;
-        margin: 10 0;
+    @media screen and (min-width: 960px){
+        width: 220px;
+        height: 320px;
+    }
+
+    @media screen and (min-width: 1024px){
+        margin: 30px 30px;
     }
 `
 export const CardImg = styled.img`
@@ -52,7 +55,7 @@ export const CardImg = styled.img`
 export const CardH2 = styled.h2`
     font-size: 1.25rem;
     text-align: center;
-    color: #fff;
+    color: #23A6D5;
     margin-top: 10px;
     margin-bottom: 10px;
 `
@@ -60,7 +63,7 @@ export const CardH2 = styled.h2`
 export const CardP = styled.p`
     font-size: 1rem;
     text-align: center;
-    color: #FFFFFF;
+    color: #23A6D5;
     margin-bottom: 20px;
 `
 
@@ -74,14 +77,13 @@ export const ButtonContainer = styled.div`
 
 export const Button = styled.a`
     text-decoration: none;
-    color: #FCA311;
+    color: #23A6D5;
     font-weight: 600;
     cursor: pointer;
     text-transform: uppercase;
 
     &:hover {
-        color: #FCA311;
-        border-bottom: solid 2px #FCA311;
-        transform: rotateZ(360deg);
+        color: #23D5AB;
+        border-bottom: solid 2px #23D5AB;
     }
 `

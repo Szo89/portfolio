@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import {Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? 'rgb(255, 255, 255, 0.5)' : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-family: 'Amatic SC', cursive;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -30,25 +30,26 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LinkS)`
-    color: #FCA311;
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 24px;
-    font-weight: bold;
+    margin-left: 30px;
     text-decoration: none;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
     padding: 0;
-    border: solid 2px #FCA311;
+    border: solid 3px #fff;
     transition: transform .8s ease-in-out;
+    box-shadow: 2.5px 5px rgb(231, 60, 126, 0.5);
   
     &:hover {
-        color: #FCA311;
-        border: solid 4px #FCA311;
+        color: #E73C7E;
+        border: solid 2px #fff;
         transform: rotateZ(360deg);
     }
 `;
@@ -64,7 +65,6 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #FCA311;
     }
 `;
 
@@ -81,12 +81,14 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    margin: 0 20px;
+    margin-left: 50px;
     height: 80px;
+    font-weight: 600;
+    font-size: 1.25rem;
 `;
 
 export const NavLinks = styled(LinkS)`
-    color: #FCA311;
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -94,10 +96,11 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &:active{
-        border-bottom: 3px solid #FCA311;
+        border-bottom: 3px solid #E73C7E;
     }
 
     &:hover{
-        border-bottom: 3px solid #FCA311;
+        color: #E73C7E;
+        border-bottom: 3px solid #E73C7E;
     }
 `;

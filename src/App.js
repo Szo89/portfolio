@@ -1,12 +1,15 @@
 import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Home from './pages';
+import {HomeBackground} from './HomeElements';
 
 function App() {
   return (
     <>
     <Router>
-      <Home />
+      <HomeBackground >
+        <Home />
+      </HomeBackground>      
     </Router>
     </>
   );

@@ -1,49 +1,64 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.div`
-    color: #14213D;
-    background: #E5E5E5;
-
-    @media screen and (max-width: 768px) {
-        padding: 50px 0;
-    }
+    color: #fff;
 `;
 
-export const AboutWrapper = styled.div`
+export const AboutContent = styled.div`
     display: grid;
     z-index: 1;
     height: 100%;
-    width: 100%;
-    max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    /* padding: 0 24px; */
     justify-content: center;
+    margin: 80px 55px;
 `;
 
 export const AboutRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    grid-template-areas: ${({imgStart}) => ( imgStart ? `'col2' 'col1'` : `'col1 col2'`) };
-
-    @media screen and (max-width: 768px){
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    text-align: justify;
+    @media screen and (min-width: 768px){
+        grid-template-areas: ${({imgStart}) => ( imgStart ? `'col2' 'col1'` : `'col1 col2'`) };
     }
 `;
 
 export const Column1 = styled.div`
     height: 100%;
     margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col1;    
+    grid-area: col1;
+
+    @media screen and (min-width: 768px){
+        
+    }
+
+    @media screen and (min-width: 960px){
+        padding-right: 12.5px;
+        grid-area: col1;
+    }
+
+    @media screen and (min-width: 1024px){
+        padding-right: 15px;
+        grid-area: col1;
+    }    
 `;
 
 export const Column2 = styled.div`
     height: 100%;
     margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col2;    
+    grid-area: col2; 
+
+    
+
+    @media screen and (min-width: 960px){
+        padding-left: 12.5px;
+        grid-area: col2;
+    }
+
+    @media screen and (min-width: 1024px){
+        padding-left: 15px;
+        grid-area: col2;
+    }      
 `;
 
 export const TextWrapper = styled.div`
@@ -51,45 +66,59 @@ export const TextWrapper = styled.div`
     padding-top: 0;
 `;
 
+export const Heading = styled.h1`
+    align-self: center;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 32px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #fff;
+
+    @media screen and (min-width: 768px){
+        font-size: 38px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1024px){
+        font-size: 48px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+`   
+
 export const TopLine = styled.p`
-    color: #FCA311;
-    font-size: 16px;
+    color: #EE7752;
+    font-size: 20px;
     line-height: 18px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 16px;
-    margin-top: 16px;
+    margin-bottom: 14px;
+    margin-top: 14px;
 
-    @media screen and (max-width: 480px){
-        margin-bottom: 14px;
-        margin-top: 16px;
-    }
-`;
-
-export const Heading = styled.h1`
-    align-self: center;
-    text-align: center;
-    font-size: 48px;
-    line-height: 1.1;
-    font-weight: 600;
-    color: #14213D;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
-    @media screen and (max-width: 480px){
-        font-size: 32px;
+    @media screen and (min-width: 768px){
+        font-size: 22px;
         margin-bottom: 16px;
         margin-top: 16px;
     }
-`
+
+    @media screen and (min-width: 1024px){
+        font-size: 24px;
+        margin-bottom: 18px;
+        margin-top: 18px;
+    }
+`;
+
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
+    margin-top: 30px;
     font-size: 16px;
     line-height: 24px;
-    /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
 `;
 
 export const IconsContainer = styled.div`
@@ -104,8 +133,20 @@ export const IconsWrapper = styled.a`
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    text-transform: capitalize;
+`;
+
+export const IconWrapper = styled.div`
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+`;
+
+export const IconSubtitle = styled.p`
+    margin: 0;
+    padding: 0;
 `
 
 

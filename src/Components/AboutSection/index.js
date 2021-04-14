@@ -1,6 +1,6 @@
 import React from 'react';
 import {AboutContainer, 
-    AboutWrapper,
+    AboutContent,
     AboutRow, 
     Column1, 
     TextWrapper, 
@@ -9,6 +9,8 @@ import {AboutContainer,
     Subtitle, 
     Column2, 
     IconsContainer,
+    IconWrapper,
+    IconSubtitle,
     IconsWrapper } from './AboutElements';
 import * as FaIcons from 'react-icons/fa';
 import * as IoIcons from 'react-icons/io';
@@ -17,7 +19,7 @@ const AboutSection = () => {
     return (
         <>
             <AboutContainer id='about'>
-                <AboutWrapper>
+                <AboutContent>
                     <Heading >About me</Heading>
                     <AboutRow >                    
                         <Column1>
@@ -46,61 +48,71 @@ const AboutSection = () => {
                         <Column2>
                             <TextWrapper>
                                 <TopLine>My skills</TopLine>                            
-                                <Subtitle>
+                                {/* <Subtitle>
                                     As a junior developer and a constant learner my scores
                                     are based on junior position (1 to 5).
-                                </Subtitle>
+                                </Subtitle> */}
                                 <IconsContainer>
                                     <IconsWrapper>
-                                        <FaIcons.FaHtml5 size={40} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
+                                        <IconWrapper>
+                                            <FaIcons.FaHtml5 size={30} style={{ fill: '#fff' }}  />
+                                            <IconSubtitle>Html 5</IconSubtitle>
+                                        </IconWrapper>                                                                                
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
                                     </IconsWrapper>
-                                    <hr/>
                                     <IconsWrapper>
-                                        <FaIcons.FaCss3 size={40} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
+                                        <IconWrapper>
+                                            <FaIcons.FaCss3 size={30} style={{ fill: '#fff' }}  />
+                                            <IconSubtitle>CSS 3</IconSubtitle>
+                                        </IconWrapper>                                        
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
                                     </IconsWrapper>
-                                    <hr/>
                                     <IconsWrapper>
-                                        <FaIcons.FaBootstrap size={40} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaRegCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaRegCircle size={25} style={{ fill: '#14213D' }}  />
+                                        <IconWrapper>
+                                            <FaIcons.FaBootstrap size={30} style={{ fill: '#fff' }}  />
+                                            <IconSubtitle>BootStrap</IconSubtitle>
+                                        </IconWrapper>                                        
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaRegCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaRegCircle size={20} style={{ fill: '#fff' }}  />
                                     </IconsWrapper>
-                                    <hr/>
                                     <IconsWrapper>
-                                        <IoIcons.IoLogoJavascript size={40} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaRegCircle size={25} style={{ fill: '#14213D' }}  />
+                                        <IconWrapper>
+                                            <IoIcons.IoLogoJavascript size={30} style={{ fill: '#fff' }}  />
+                                            <IconSubtitle>JavaScript</IconSubtitle>
+                                        </IconWrapper>                                        
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaRegCircle size={20} style={{ fill: '#fff' }}  />
                                     </IconsWrapper>
-                                    <hr/>
                                     <IconsWrapper>
-                                        <FaIcons.FaReact size={40} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaCircle size={25} style={{ fill: '#14213D' }}  />
-                                        <FaIcons.FaRegCircle size={25} style={{ fill: '#14213D' }}  />
+                                        <IconWrapper>
+                                            <FaIcons.FaReact size={30} style={{ fill: '#fff' }}  />
+                                            <IconSubtitle>React</IconSubtitle>
+                                        </IconWrapper>                                        
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaRegCircle size={20} style={{ fill: '#fff' }}  />
                                     </IconsWrapper>
-                                    <hr/>
                                 </IconsContainer>
                             </TextWrapper>
                         </Column2>
                     </AboutRow>
-                </AboutWrapper>
+                </AboutContent>
             </AboutContainer>
         </>
     )

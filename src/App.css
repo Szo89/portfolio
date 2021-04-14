@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 18px;  
   background-color: #eef0f5;
   overflow-x: hidden;
@@ -15,12 +15,10 @@ body {
 
 .main-section{
   width: 100%;
-  min-height: 100vh;
 }
 
 .footer-section{
   width: 100%;
-  min-height: 100vh;
 }
 
 a{
@@ -28,15 +26,111 @@ a{
   text-transform: lowercase;
 }
 
-h1{
-  font-size: 2em;
-  color: #22223B;
-}
 
 span{
-  font-weight: 600;
-  background: linear-gradient(to right, #4A4E69 0%, #C9ADA7 100%);
+  font-weight: 700;
+  background: linear-gradient(to right, #FFF 10%, #E73C7E 50%, #EE7752 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+
+@media (min-width:576px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  h3{
+    font-size: 18px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+}
+@media (min-width:640px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+}
+
+@media (min-width:768px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2{
+    font-size: 26px;
+  }
+  h3{
+    font-size: 24px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+}
+
+@media (min-width:960px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+}
+
+@media (min-width:1024px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+  h3{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1280px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2{
+    font-size: 32px;
+  }
+  
+  h3{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+}
