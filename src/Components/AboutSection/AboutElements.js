@@ -29,16 +29,17 @@ export const Column1 = styled.div`
     grid-area: col1;
 
     @media screen and (min-width: 768px){
-        
-    }
-
-    @media screen and (min-width: 960px){
         padding-right: 12.5px;
         grid-area: col1;
     }
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 960px){
         padding-right: 15px;
+        grid-area: col1;
+    }
+
+    @media screen and (min-width: 1024px){
+        padding-right: 20px;
         grid-area: col1;
     }    
 `;
@@ -48,15 +49,18 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     grid-area: col2; 
 
-    
-
-    @media screen and (min-width: 960px){
+    @media screen and (min-width: 768px){
         padding-left: 12.5px;
         grid-area: col2;
     }
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 960px){
         padding-left: 15px;
+        grid-area: col2;
+    }
+
+    @media screen and (min-width: 1024px){
+        padding-left: 20px;
         grid-area: col2;
     }      
 `;
