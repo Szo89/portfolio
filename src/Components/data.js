@@ -5,7 +5,7 @@ export const projects = [
         languages: ['react'],
         image : "https://media.giphy.com/media/m2SAii04Q3w9DSx2ZY/giphy.gif",
         category: 'React',
-        url: 'https://github.com/Szo89/portfolio',
+        url: 'https://portfolio-szo89.vercel.app/',
         source: 'https://github.com/Szo89/portfolio',
     },
     {
