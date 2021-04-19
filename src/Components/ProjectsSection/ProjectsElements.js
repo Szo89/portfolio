@@ -9,16 +9,24 @@ export const ProjectsContent = styled.div`
     justify-content: center; 
     align-items: center;
     text-align: center;
-    
-    @media (min-width:1280px) {
-        padding: 0;
-        margin: 80px 55px;
+
+    @media (min-width:960px) {
+        padding: 80px 120px;
     }
 
-    /* @media (min-width:1450px) {
+    @media (min-width:1280px) {
         padding: 0;
-        margin: 80px 55px;
-    } */
+        margin: 80px 150px;
+    }
+    
+    @media (min-width:1350px) {
+        margin: 80px 235px;
+    }
+
+    @media (min-width:1440px) {
+        margin: 80px 253px;
+    }
+
 `
 
 export const ProjectsWrapper = styled.div`

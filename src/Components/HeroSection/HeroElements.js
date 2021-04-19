@@ -19,15 +19,20 @@ export const HeroContent = styled.div`
     padding: 80px 55px;
 
     @media (min-width:960px) {
-        justify-content:center;
+        padding: 80px 120px;
     }
 
     @media (min-width:1280px) {
-        padding: 80px 185px;
+        padding: 0;
+        margin: 80px 185px;
     }
     
-    @media (min-width:1450px) {
-        padding: 80px 298px;
+    @media (min-width:1350px) {
+        margin: 80px 235px;
+    }
+
+    @media (min-width:1440px) {
+        margin: 80px 265px;
     }
 `;
 
