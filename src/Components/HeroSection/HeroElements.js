@@ -28,11 +28,13 @@ export const HeroContent = styled.div`
     }
     
     @media (min-width:1350px) {
+        padding: 0;
         margin: 80px 235px;
     }
 
     @media (min-width:1440px) {
-        margin: 80px 265px;
+        padding: 0;
+        margin: 80px 298px;
     }
 `;
 

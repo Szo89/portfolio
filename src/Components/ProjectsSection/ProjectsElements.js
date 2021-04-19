@@ -16,7 +16,7 @@ export const ProjectsContent = styled.div`
 
     @media (min-width:1280px) {
         padding: 0;
-        margin: 80px 150px;
+        margin: 80px 160px;
     }
     
     @media (min-width:1350px) {
@@ -24,7 +24,7 @@ export const ProjectsContent = styled.div`
     }
 
     @media (min-width:1440px) {
-        margin: 80px 253px;
+        margin: 80px 298px;
     }
 
 `
