@@ -19,22 +19,22 @@ export const Button = styled.button`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    margin: 10px 25px;
+    margin: 10px 10px;
 
     &:hover{
         transition: all 0.2s ease-in-out;
         background: #23D5AB;
     }
 
-    @media screen and (min-width: 500px){
-        width: 80px;
-        height: 35px;
-        margin: 10px 55px;
-        margin-bottom: 10px;
-        font-size: 13px;
+    @media screen and (min-width: 400px){
+        margin: 10px 25px;
     }
 
-    @media screen and (min-width: 670px){
+    @media screen and (min-width: 500px){
+        margin: 10px 50px;
+    }
+
+    @media screen and (min-width: 660px){
         width: 90px;
         height: 40px;
         margin: 10px 90px;

@@ -5,14 +5,20 @@ export const ProjectsContainer = styled.div`
 `
 
 export const ProjectsContent = styled.div`
-    margin: 80px 55px;
+    padding: 80px 55px;
     justify-content: center; 
     align-items: center;
     text-align: center;
     
     @media (min-width:1280px) {
-        margin: 80px 300px;
+        padding: 0;
+        margin: 80px 55px;
     }
+
+    /* @media (min-width:1450px) {
+        padding: 0;
+        margin: 80px 55px;
+    } */
 `
 
 export const ProjectsWrapper = styled.div`
@@ -34,7 +40,7 @@ export const FilterContainer = styled.form`
 
 export const ProjectsP =styled.p`
     font-size: 1.25rem;
-    text-align: justify;
+    text-align: center;
     color: #FFFFFF;
     margin-bottom: 25px;
 `

@@ -29,12 +29,12 @@ const Contact = () => {
                         </Icons>
                         <Icons href="https://www.linkedin.com/in/susana-z-de-oliveira-b01621129/" target="_blank"rel="linkedin">
                             <FaIcons.FaLinkedin />
-                        </Icons>
-                        <FooterContent>
-                            <FooterP>Developed by Susana de Oliveira | All rights reserved.</FooterP> 
-                        </FooterContent>
-                    </IconsWrapper>
-                </FooterWrapper>                  
+                        </Icons>                        
+                    </IconsWrapper>                    
+                </FooterWrapper>
+                    <FooterContent>
+                        <FooterP>Developed by Susana de Oliveira | All rights reserved.</FooterP> 
+                    </FooterContent>                  
         </FooterContainer>
     )
   

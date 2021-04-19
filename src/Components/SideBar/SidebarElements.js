@@ -65,10 +65,6 @@ export const SidebarLinks = styled(LinkS)`
         color: #EE7752;
         transition: 0.2s ease-in-out;
     }
-
-    &.active{
-        border-bottom: 3px solid #EE7752;
-    }
 `;
 
 

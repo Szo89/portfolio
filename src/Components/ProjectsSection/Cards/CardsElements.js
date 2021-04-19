@@ -12,8 +12,8 @@ export const CardContainer = styled.div`
 `
 
 export const CardWrapper = styled.div`
-    max-height: 100px;
-    min-height: 280px;
+    min-height: 100px;
+    max-height: 280px;
     border: solid 5px #23A6D5;
     display: flex ;
     flex-direction: column;
@@ -46,7 +46,7 @@ export const CardWrapper = styled.div`
     }
 `
 export const CardImg = styled.img`
-    height: 160px;
+    height: 130px;
     width: 160px;
     margin-bottom: 10px;
     border-radius: 5px;   
@@ -58,6 +58,7 @@ export const CardH2 = styled.h2`
     color: #23A6D5;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 `
 
 export const CardP = styled.p`

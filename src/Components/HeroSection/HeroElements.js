@@ -16,14 +16,18 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: flex-start;
     font-family: 'Amatic SC', cursive;
-    margin: 80px 55px;
+    padding: 80px 55px;
 
     @media (min-width:960px) {
         justify-content:center;
     }
 
     @media (min-width:1280px) {
-        margin: 80px 300px;
+        padding: 80px 185px;
+    }
+    
+    @media (min-width:1450px) {
+        padding: 80px 298px;
     }
 `;
 

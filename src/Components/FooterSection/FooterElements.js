@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.div`
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-content: center;
     color: #fff;
+    padding: 80px 55px;
 
-    @media screen and (max-width: 500px){
-        height: 100vh;
+    @media (min-width:1280px) {
+        height: 90vh;
+        padding: 0;
+        margin-top: 80px;
     }
-
 `
 
 export const IconsWrapper = styled.div`
@@ -30,7 +32,7 @@ export const Icons = styled.a`
     transition: all 0.2s ease-in-out;
 
     &:hover{
-        transform: scale(1.5);
+        transform: scale(1.3);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
         color: #EE7752;
@@ -56,5 +58,10 @@ export const FooterP = styled.p`
     font-family: 'Josefin Slab', serif;
     color: #fff;
     font-size: 16px;
+    margin-top:100px;
+    margin-bottom:0;
 
+    @media (min-width:1280px) {
+        margin-top: 90px;
+    }
 `

@@ -9,7 +9,17 @@ export const AboutContent = styled.div`
     z-index: 1;
     height: 100%;
     justify-content: center;
-    margin: 80px 55px;
+    padding: 80px 55px;
+
+    @media (min-width:1280px) {
+        padding: 0;
+        margin: 80px 55px;
+    }
+
+    @media (min-width:1450px) {
+        padding: 0;
+        margin: 80px 55px;
+    }
 `;
 
 export const AboutRow = styled.div`
@@ -37,11 +47,6 @@ export const Column1 = styled.div`
         padding-right: 15px;
         grid-area: col1;
     }
-
-    @media screen and (min-width: 1024px){
-        padding-right: 20px;
-        grid-area: col1;
-    }    
 `;
 
 export const Column2 = styled.div`
@@ -57,12 +62,7 @@ export const Column2 = styled.div`
     @media screen and (min-width: 960px){
         padding-left: 15px;
         grid-area: col2;
-    }
-
-    @media screen and (min-width: 1024px){
-        padding-left: 20px;
-        grid-area: col2;
-    }      
+    }    
 `;
 
 export const TextWrapper = styled.div`
@@ -80,6 +80,7 @@ export const Heading = styled.h1`
     line-height: 1.1;
     font-weight: 600;
     color: #fff;
+    font-family: 'Amatic SC', cursive;
 
     @media screen and (min-width: 768px){
         font-size: 38px;
@@ -95,14 +96,15 @@ export const Heading = styled.h1`
 `   
 
 export const TopLine = styled.p`
-    color: #EE7752;
+    color: #fff;
     font-size: 20px;
     line-height: 18px;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 14px;
     margin-top: 14px;
+    font-family: 'Amatic SC', cursive;
 
     @media screen and (min-width: 768px){
         font-size: 22px;

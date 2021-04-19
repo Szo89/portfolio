@@ -82,7 +82,7 @@ const AboutSection = () => {
                                         </IconWrapper>                                        
                                         <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
                                         <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
-                                        <FaIcons.FaCircle size={20} style={{ fill: '#fff' }}  />
+                                        <FaIcons.FaRegCircle size={20} style={{ fill: '#fff' }}  />
                                         <FaIcons.FaRegCircle size={20} style={{ fill: '#fff' }}  />
                                         <FaIcons.FaRegCircle size={20} style={{ fill: '#fff' }}  />
                                     </IconsWrapper>

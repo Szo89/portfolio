@@ -100,7 +100,6 @@ export const NavLinks = styled(LinkS)`
     }
 
     &:hover{
-        color: #E73C7E;
-        border-bottom: 3px solid #E73C7E;
+        border-bottom: 3px solid #fff;
     }
 `;
