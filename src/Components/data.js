@@ -33,8 +33,26 @@ export const projects = [
         languages: ['html ', 'css ', 'javascript'],
         image : "https://media.giphy.com/media/bGUS95z7LlH2UeNyQe/giphy.gif",
         category: 'Javascript',
-        url: 'https://szo89.github.io/Election-map/',
-        source: 'https://github.com/Szo89/Election-map',
+        url: 'https://szo89.github.io/election-map/',
+        source: 'https://github.com/Szo89/election-map',
+    },
+    {
+        id: 5,
+        name: 'Guess the word',
+        languages: ['html ', 'css ', 'javascript'],
+        image : "https://media.giphy.com/media/dlMXHcjREAQwgttKO5/giphy.gif",
+        category: 'Javascript',
+        url: 'https://szo89.github.io/guess-the-word/',
+        source: 'https://github.com/Szo89/guess-the-word',
+    },
+    {
+        id: 6,
+        name: 'Github Portfolio',
+        languages: ['html ', 'css ', 'javascript'],
+        image : "https://media.giphy.com/media/Dxn4kc5S4zwkQg7oS2/giphy.gif",
+        category: 'Javascript',
+        url: 'https://szo89.github.io/github-repo-gallery/',
+        source: 'https://github.com/Szo89/github-repo-gallery',
     },
     
 ]
